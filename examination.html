@@ -7,78 +7,116 @@
     <title>隨堂測驗</title>
   </head>
   <body>
-    <form action="form_action.php" method="get">
-      <label for="myname">姓名：</label>
-      <input type="text" id="myname" name="myname" />
-      <br />
+    <div id="wrapper">
+      <form action="get">
+        <div id="form-group">
+          <label for="myname">名字：</label>
+          <input class="textinput" type="text" id="myname" name="myname" />
+          <br />
+        </div>
 
-      <label for="birthday">生日：</label>
-      <input type="date" id="birthday" name="birthday" />
-      <br />
+        <div id="form-group">
+          <label for="birthday">生日：</label>
+          <input class="textinput" type="date" id="birthday" name="birthday" />
+          <br />
+        </div>
 
-      <label for="e-mail">信箱：</label>
-      <input type="email" id="e-mail" name="email" />
-      <br />
+        <div id="form-group">
+          <label for="e-mail">信箱：</label>
+          <input class="textinput" type="email" id="e-mail" name="email" />
+          <br />
+        </div>
 
-      <label for="password">密碼：</label>
-      <input type="password" id="password" name="password" />
-      <br />
+        <div id="form-group">
+          <label for="password">密碼：</label>
+          <input
+            class="textinput"
+            type="password"
+            id="password"
+            name="password"
+          />
+          <br />
+        </div>
 
-      <label for="IQ">智商：</label>
-      <input type="number" id="IQ" name="IQ" />
-      <br />
+        <div id="form-group">
+          <label for="IQ">智商：</label>
+          <input class="textinput" type="number" id="IQ" name="IQ" />
+          <br />
+        </div>
 
-      <label for="resume">履歷：</label>
-      <input type="file" id="resume" name="resume" />
-      <br />
+        <div id="form-group">
+          <label for="resume">履歷：</label>
+          <input type="file" id="resume" name="resume" />
+          <br />
+        </div>
 
-      <label for="book">秒懂進度：</label>
-      <br />
-      <input type="checkbox" id="html" name="schedule" />
-      <label for="html">HTML</label>
-      <input type="checkbox" id="css" name="schedule" />
-      <label for="css">CSS</label>
-      <input type="checkbox" id="jquery" name="schedule" />
-      <label for="jquery">Jquery</label>
-      <input type="checkbox" id="cutting" name="schedule" />
-      <label for="cutting">版面切割</label>
-      <br />
-      <input type="checkbox" id="bootstrap" name="schedule" />
-      <label for="bootstrap">Bootstrap</label>
-      <input type="checkbox" id="bootstrap" name="schedule" />
-      <label for="bootstrapRWD">Bootstrap+RWD</label>
-      <br />
+        <div id="form-group">
+          <label for="book">秒懂進度：</label>
+          <br />
+          <input type="checkbox" id="html" name="schedule" />
+          <label for="html">HTML</label>
+          <input type="checkbox" id="css" name="schedule" />
+          <label for="css">CSS</label>
+          <input type="checkbox" id="jquery" name="schedule" />
+          <label for="jquery">Jquery</label>
+          <input type="checkbox" id="cutting" name="schedule" />
+          <label for="cutting">版面切割</label>
+          <br />
+          <input type="checkbox" id="bootstrap" name="schedule" />
+          <label for="bootstrap">Bootstrap</label>
+          <input type="checkbox" id="bootstrap" name="schedule" />
+          <label for="bootstrapRWD">Bootstrap+RWD</label>
+          <br />
+        </div>
 
-      <label for="homework">作業是否完成：</label>
-      <input type="radio" id="yes" name="yn" />
-      <label for="yes">Yes</label>
-      <input type="radio" id="no" name="yn" />
-      <label for="no">No</label>
-      <br />
+        <div id="form-group">
+          <label for="homework">作業是否完成：</label>
+          <input type="radio" id="yes" name="yn" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="yn" />
+          <label for="no">No</label>
+          <br />
+        </div>
 
-      <label for="completiontime">作業完成時間：</label>
-      <input
-        type="time"
-        id="completiontime"
-        name="completiontime"
-        value="14:20"
-      />
-      <br />
+        <div id="form-group">
+          <label for="completiontime">作業完成時間：</label>
+          <input
+            class="textinput"
+            type="time"
+            id="completiontime"
+            name="completiontime"
+            value="14:20"
+          />
+          <br />
+        </div>
 
-      <label for="like">喜歡這次的作業嗎：</label>
-      <input type="range" id="like" name="like" />
-      <br />
+        <div id="form-group">
+          <label for="like">喜歡這次的作業嗎：</label>
+          <input type="range" id="like" name="like" />
+          <br />
+        </div>
 
-      <label for="suggestion">對考試題目有哪些建議：</label>
-      <br />
-      <textarea rows="4" id="suggestion"></textarea>
-      <br />
+        <div id="form-group">
+          <label for="suggestion">對考試題目有哪些建議：</label>
+          <br />
+          <textarea
+            class="textinput"
+            cols="30"
+            rows="4"
+            id="suggestion"
+          ></textarea>
+          <br />
+          <br />
+        </div>
 
-      <input type="reset" value="清除" />
-      <input type="submit" value="送出" />
-      <br />
+        <div id="form-group">
+          <input class="textinput" type="reset" value="清除" />
+          <input class="textinput" type="submit" value="送出" />
+          <br />
+        </div>
 
-      <img src="img/01.png" />
-    </form>
+        <img src="img/01.png" />
+      </form>
+    </div>
   </body>
 </html>
